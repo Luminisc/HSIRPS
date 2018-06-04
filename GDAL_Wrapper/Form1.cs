@@ -232,5 +232,10 @@ namespace GDAL_Wrapper
                 RenderSide(point.X);
             }
         }
+
+        private void btnSaveTransitionImage_Click(object sender, EventArgs e)
+        {
+            DataGenerators.GenerateTransitionImage(dataset, "transition.img");
+        }
     }
 }

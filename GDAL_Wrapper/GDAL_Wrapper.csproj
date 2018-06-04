@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ColorCannyEdgeDetection.cs" />
+    <Compile Include="DataGenerators.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,7 +95,7 @@
     </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PreBuildEvent>xcopy /e $(ProjectDir)AfterBuild\*.* $(ProjectDir)$(OutDir)</PreBuildEvent>
+    <PreBuildEvent>xcopy /e /d $(ProjectDir)AfterBuild\*.* $(ProjectDir)$(OutDir)</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

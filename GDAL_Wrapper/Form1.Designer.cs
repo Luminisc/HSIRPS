@@ -35,6 +35,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnSaveTransitionImage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -132,12 +133,23 @@
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
             // 
+            // btnSaveTransitionImage
+            // 
+            this.btnSaveTransitionImage.Location = new System.Drawing.Point(220, 12);
+            this.btnSaveTransitionImage.Name = "btnSaveTransitionImage";
+            this.btnSaveTransitionImage.Size = new System.Drawing.Size(131, 23);
+            this.btnSaveTransitionImage.TabIndex = 5;
+            this.btnSaveTransitionImage.Text = "Save transition image";
+            this.btnSaveTransitionImage.UseVisualStyleBackColor = true;
+            this.btnSaveTransitionImage.Click += new System.EventHandler(this.btnSaveTransitionImage_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1259, 665);
+            this.Controls.Add(this.btnSaveTransitionImage);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button1);
@@ -162,6 +174,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btnSaveTransitionImage;
     }
 }
 
