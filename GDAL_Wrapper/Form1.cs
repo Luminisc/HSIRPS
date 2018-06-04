@@ -15,11 +15,12 @@ namespace GDAL_Wrapper
 {
     public partial class Form1 : Form
     {
-        public static string picturePath = @"Pics\Data_Envi\samson_1.img";
-        //public static string picturePath = @"D:\University\HuperspectralImaging\Urban_F210\Urban_F210.img";
+        public static string picturePath = @"..\..\Pics\Data_Envi\samson_1.img";
+        //public static string picturePath = @"..\..\Pics\Urban_F210\Urban_F210.img";
         public Dataset dataset;
         int max = -10;
         int min = 60000;
+
         double[] wavelengths = new double[] {
             400.938721, 404.152496, 407.366302, 410.580048, 413.793854, 417.007629,
             420.221405, 423.435181, 426.648956, 429.862732, 433.076508, 436.290314,
